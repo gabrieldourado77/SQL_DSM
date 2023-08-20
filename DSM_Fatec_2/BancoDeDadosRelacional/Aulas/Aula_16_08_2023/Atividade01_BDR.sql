@@ -6,7 +6,7 @@ CREATE TABLE Departamento(
   NomeDepto varchar(15) NOT NULL,
   Gerente int NOT NULL,
   Divisao varchar(10) NOT NULL,
-  local varchar(15) NOT NULL,
+  Local varchar(15) NOT NULL,
   PRIMARY KEY(IdDepto)
 );
 
