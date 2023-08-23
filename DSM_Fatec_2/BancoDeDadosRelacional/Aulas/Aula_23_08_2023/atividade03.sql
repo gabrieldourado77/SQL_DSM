@@ -1,4 +1,4 @@
-# Criação do banco de dados e das tabelas:
+# Criação do banco de dados e das tabelas.
 
 CREATE DATABASE atividade03;
 USE atividade03;
@@ -23,7 +23,7 @@ CREATE TABLE Empregado(
     PRIMARY KEY(IdEmpregado)
 );
 
-# Inserção de dois registros, em cada tabela:
+# Inserção de dois registros, em cada tabela.
 
 INSERT INTO Departamento VALUES
 (1, 'Administração', 3, 'Leste', 'Santo André');
@@ -37,7 +37,7 @@ INSERT INTO Empregado VALUES
 INSERT INTO Empregado VALUES
 (2, 'Vanessa', 2, 'CONT', 4, NULL, 200.00);
 
-# Consultas pedidas nos exercícios:
+# Consultas pedidas nos exercícios.
 
 SELECT Divisao AS 'Divisões' 
 FROM Departamento;
@@ -69,4 +69,3 @@ COALESCE(Salario / 30 / 8, 0) AS 'Salário por Hora',
 COALESCE(Salario / 30 / 8 / 60, 0) AS 'Salário por Minuto',
 COALESCE(Salario / 30 / 8 / 60 / 60, 0) AS 'Salário por Segundo'
 FROM Empregado;
-
