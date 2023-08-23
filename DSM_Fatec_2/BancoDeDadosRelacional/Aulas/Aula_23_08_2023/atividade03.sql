@@ -4,7 +4,7 @@ CREATE DATABASE atividade03;
 USE atividade03;
 
 CREATE TABLE Departamento(
-	IdDepto int NOT NULL,
+    IdDepto int NOT NULL,
     NomeDepto varchar(15) NOT NULL,
     Gerente int NOT NULL,
     Divisao varchar(10) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE Departamento(
 );
 
 CREATE TABLE Empregado(
-	IdEmpregado int NOT NULL,
+    IdEmpregado int NOT NULL,
     NomeEmpregado varchar(20) NOT NULL,
     IdDepto int NOT NULL,
     Cargo varchar(6) NOT NULL,
