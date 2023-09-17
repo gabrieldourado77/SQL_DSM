@@ -14,11 +14,9 @@ BEGIN
 	IF(@ultimoEspaco > 0)
 		SET @ultimoNome = RIGHT(@nome, @ultimoEspaco - 1)
 	ELSE
-		SET @ultimoNome = 'Não foi encontrado'
+		SET @ultimoNome = 'NÃ£o foi encontrado'
 
 	RETURN @ultimoNome
 END
 
-SELECT dbo.f_UltimoNome('Gabriel Dourado dos Santos') AS 'Último_Nome'
-
-
+SELECT dbo.f_UltimoNome('Gabriel Dourado dos Santos') AS 'Ãšltimo_Nome'
