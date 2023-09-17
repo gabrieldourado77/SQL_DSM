@@ -5,7 +5,9 @@ RETURNS decimal(10,2)
 AS
 BEGIN
 	DECLARE @resultado decimal(10,2) = 0.00
+
 	SET @resultado = @valor * (@perc / 100)
+
 	RETURN @resultado
 END
 

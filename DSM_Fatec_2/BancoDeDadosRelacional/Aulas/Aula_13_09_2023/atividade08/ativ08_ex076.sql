@@ -5,6 +5,7 @@ RETURNS varchar(20)
 AS
 BEGIN
 	DECLARE @diaExtenso varchar(20) = ' '
+
 	IF(@dia < 1 OR @dia > 7)
 		SET @diaExtenso = 'Dia Inválido!'
 	ELSE IF(@dia = 1)
@@ -21,6 +22,7 @@ BEGIN
 		SET @diaExtenso = '6 = Sexta'
 	ELSE IF(@dia = 7)
 		SET @diaExtenso = '7 = Sábado'
+
 	RETURN @diaExtenso
 END
 

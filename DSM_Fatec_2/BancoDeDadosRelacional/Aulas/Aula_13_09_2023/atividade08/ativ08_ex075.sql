@@ -5,6 +5,7 @@ RETURNS varchar(20)
 AS
 BEGIN
 	DECLARE @mesExtenso varchar(20) = ' '
+
 	IF(@mes < 1 OR @mes > 12)
 		SET @mesExtenso = 'Mês Inválido!'
 	ELSE IF(@mes = 1)
@@ -31,6 +32,7 @@ BEGIN
 		SET @mesExtenso = '11 = Novembro'
 	ELSE IF(@mes = 12)
 		SET @mesExtenso = '12 = Dezembro'
+
 	RETURN @mesExtenso
 END
 
