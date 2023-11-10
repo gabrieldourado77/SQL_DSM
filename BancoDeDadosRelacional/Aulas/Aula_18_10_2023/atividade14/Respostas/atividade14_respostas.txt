@@ -1,0 +1,28 @@
+Exercício 106
+
+CREATE TABLE aluno(
+    id_aluno int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    cidade varchar(50) NOT NULL);
+
+
+Exercício 107
+
+CREATE INDEX idx_aluno_cidade ON aluno(cidade);
+
+
+Exercício 108
+
+SELECT COUNT(*) FROM aluno
+	WHERE cidade = 'Guarulhos';
+
+
+Exercício 109
+
+Guarulhos - São Paulo
+
+
+Exercício 110
+
+
+Exercício 111
+
